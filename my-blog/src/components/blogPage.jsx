@@ -6,7 +6,7 @@ const BlogPage = () => {
     return (
         <div className="w-full min-h-screen relative">
             <h1 className="text-3xl sm:text-4xl text-gray-800 text-center mt-10 font-bold">All Blogs</h1>
-                {blogs.length === 0 ? <p className="max-w-5xl mx-auto pt-5 text-2xl text-gray-800 ">Your blog page is empty. Click on the New blog button to create a blog</p> : ''}
+                {blogs.length === 0 ? <p className="w-full mx-3 sm:max-w-5xl sm:mx-auto pt-5 text-2xl text-gray-800 ">Your blog page is empty. Click on the New blog button to create a blog</p> : ''}
             <div className="max-w-5xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-3 gap-8   mt-10">
                 {blogs.map((blog)=>(
                     <div className="  bg-white rounded-2xl text-center flex flex-col items-center" key={blog.id}>
